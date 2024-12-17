@@ -11,7 +11,7 @@ class SoundBite
     private:
         std::string name;
         std::string fileName;
-        vector<SDL_Scancode> keyBind;
+        std::vector<SDL_Scancode> keyBind;
     public:
         bool play();
         bool changeName(std::string NAME);
