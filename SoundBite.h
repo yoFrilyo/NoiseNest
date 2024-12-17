@@ -9,16 +9,16 @@
 class SoundBite
 {
     private:
-        string name;
-        string fileName;
+        std::string name;
+        std::string fileName;
         vector<SDL_Scancode> keyBind;
     public:
         bool play();
-        bool changeName(string NAME);
-        bool changeFile(string FILENAME);
-        bool changeKeyBind(vector<SDL_Scancode> KEYBIND);
+        bool changeName(std::string NAME);
+        bool changeFile(std::string FILENAME);
+        bool changeKeyBind(std::vector<SDL_Scancode> KEYBIND);
 
-        SoundBite(string NAME, string FILENAME, &vector<SDL_Scancode> KEYBIND);
+        SoundBite(std::string NAME, std::string FILENAME, &std::vector<SDL_Scancode> KEYBIND);
         SoundBite~();
 };
 
