@@ -1,8 +1,12 @@
 // SoundBite.h
 // By Frilyo and Augie!
 
-#define SOUNDBITE_H
 #ifndef SOUNDBITE_H
+#define SOUNDBITE_H
+
+#include <string>
+#include <vector>
+#include <SDL2/SDL.h>
 
 
 
@@ -18,8 +22,8 @@ class SoundBite
         bool changeFile(std::string FILENAME);
         bool changeKeyBind(std::vector<SDL_Scancode> KEYBIND);
 
-        SoundBite(std::string NAME, std::string FILENAME, &std::vector<SDL_Scancode> KEYBIND);
-        SoundBite~();
+        SoundBite(std::string NAME, std::string FILENAME, std::vector<SDL_Scancode> KEYBIND);
+        //~SoundBite();
 };
 
 #endif
